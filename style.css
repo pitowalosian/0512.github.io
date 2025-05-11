@@ -1,0 +1,250 @@
+
+
+body{
+    margin: 0px;
+    background-color: #f5f5f5;
+    font-family: "Martian Mono";
+    font-weight: 300;
+    font-size: 15px;
+    color: rgb(79, 77, 77);
+}
+
+h4{
+    float: left;
+    padding-left: 30px;
+    display: block;
+    color: #281640;
+    font-weight: 200;
+    padding-right: 160px;
+    text-decoration: none;
+}
+
+.navbar{
+    display: block;
+    margin: auto;
+    font-family: monospace;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #be9ce9;
+    position: sticky; /* Set the navbar to fixed position */
+    z-index: 1;
+    top: 0px; /* Position the navbar at the top of the page */
+    width: 100%; 
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 20px 198px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: #f5f5f5;
+    color: #be9ce9;
+}
+
+header{
+    font-family: "Cal Sans";
+    letter-spacing: 0.1em;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 80px;
+    color: #281640;
+}
+
+.text{
+    text-align: center;
+}
+
+.text span{
+    font-family: "Outfit";
+    text-align: center;
+    font-size: 20px;
+    color: #281640;
+}
+
+.mem-img {
+    width: 18%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #00000033;
+}
+
+.memories{
+    display: block;
+    background-color: #49365e;
+    text-align: center;
+}
+
+.title{
+    font-family: "Cal Sans";
+    font-size: 60px;
+    font-weight: 200;
+    text-align: center;
+    color: #281640;
+    background-color: #f5f5f5;
+    padding-top: 40px;
+}
+
+.note{
+    font-family: "Outfit";
+    text-align: center;
+    font-size: 20px;
+    background-color: #f5f5f5;
+    color: #281640;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 300;
+    box-shadow:rgba(0, 0, 0, 0.2)
+}
+
+.mem-text{
+    font-family: "Outfit";
+    font-size: 15px;
+    color:#281640;
+    text-align: center;
+    margin: 15px;
+    font-weight: 300;
+}
+
+.mem-text span{
+    font-family: "Verdana";
+    font-size: 15px;
+    background-color: #49395e;
+    color:#f5f5f5;
+    text-align: center;
+    margin: 10px;
+}
+
+.hover_bkgr_fricc{
+    background:rgba(0,0,0,.4);
+    cursor:pointer;
+    display:none;
+    height: 100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:10000;
+}
+.hover_bkgr_fricc .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.hover_bkgr_fricc > div {
+    background-color: #f5f5f5;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: auto;
+    max-width: 551px;
+    min-height: 20%;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+    animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.popupCloseButton {
+    background-color: #f5f5f5;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.memmem{
+    width: auto;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow:rgba(0, 0, 0, 0.2)
+}
+.popupCloseButton:hover {
+    background-color: #f5f5f5;
+}
+.trigger_popup_fricc {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.slider{
+    display: block;
+    position: relative;
+    margin-top: 1.5em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.slider img {
+    width: 100%;
+    display: none;
+}
+
+img.displaySlide {
+    display: block;
+    animation: slideIn 1.75s ease-in-out, slideOut 1.75s ease-in-out 3s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.letter {
+    font-family: "Special Elite";
+    font-size: 15px;
+    letter-spacing: 0.1em; 
+    line-height: 1.75em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-size: cover;
+    background-clip: padding-box;
+    padding: 40px;
+    box-sizing: border-box;
+    width: 60%;
+    margin: 40px auto;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    background-position: center;   background-attachment: fixed;
+    background-image: url(https://images.unsplash.com/photo-1615800098799-0ccb261b1f92?q=80&w=3110&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+}
